@@ -1,0 +1,94 @@
+/* what the fuck man */
+p, h4 {
+font-family: 'Times New Roman', Times, serif;
+color: blue;
+}
+h1 {
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-height: 80px;
+    --nav-width: 250px;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+}
+
+/* Header */
+
+header {
+    height: var(--header-height);
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 20px;
+}
+
+/* Navigation */
+
+nav {
+    position: fixed;
+    top: var(--header-height);
+    right: 0;
+
+    width: var(--nav-width);
+    height: calc(100vh - var(--header-height));
+
+    background: #ffffff;
+    padding: 25px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 15px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/* Main Area */
+
+main {
+    margin-right: var(--nav-width);
+
+    min-height: calc(100vh - var(--header-height));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+/* Content Box */
+
+.content {
+    width: min(700px, 100%);
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+.content p {
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
